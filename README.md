@@ -1,6 +1,6 @@
 
 
-"""
+'''
 Training of MLP...
    Epoch: 0, accuracy: 93.63%, time: 112.01
    Survey accuracy: 96.38%, time: 2.05
@@ -45,4 +45,4 @@ Training of CNN + MLP...
    Epoch: 9, accuracy: 99.34%, time: 537.07
    Survey accuracy: 99.26%, time: 28.40
    Overall time: 6604.93
-"""
+'''
