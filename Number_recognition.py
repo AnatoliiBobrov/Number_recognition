@@ -42,7 +42,6 @@ class Net(Module):
 class ConvNet(Module):
     """
     Digit recognition network, CNN + MLP 
-    perceptron
     99,26% accuracy on test
     """
     def __init__(self, keep_prob):
