@@ -23,8 +23,8 @@ TARGETS = [torch.tensor([(0.01 if x != i else 0.99) for x in range (10)]) \
 
 class Net(Module):
     """
-    Digit recognition network, fully connected perceptron
-    97,95% accuracy on test
+    Digit recognition network, MLP
+    98,11% accuracy on test
     """
     def __init__(self):
         super(Net, self).__init__()
@@ -41,9 +41,9 @@ class Net(Module):
 
 class ConvNet(Module):
     """
-    Digit recognition network, convolutional NN + fully connected 
+    Digit recognition network, CNN + MLP 
     perceptron
-    99,20% accuracy on test
+    99,26% accuracy on test
     """
     def __init__(self, keep_prob):
         super(ConvNet, self).__init__()
@@ -152,7 +152,7 @@ def train_both():
     # Training of fully connected perceptron
     net = Net()
     x_train, y_train, x_test, y_test = get_data()
-    print ("Training of fully connected perceptron...")
+    print ("Training of MLP...")
     train_net(net, x_train, y_train, x_test, y_test)
 
     # Training of convolutional NN + fully connected perceptron
@@ -163,7 +163,7 @@ def train_both():
     x_test_ = []
     for digit in x_test:
         x_test_.append(digit.reshape((1, 28, 28)))
-    print ("Training of convolutional NN + fully connected perceptron...")
+    print ("Training of CNN + MLP...")
     train_net(net, x_train_, y_train, x_test_, y_test)
     
 train_both()
