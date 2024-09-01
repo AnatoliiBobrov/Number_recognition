@@ -148,13 +148,13 @@ def train_both():
     """
     Training of two types of NN
     """    
-    # Training of fully connected perceptron
+    # Training of MLP
     net = Net()
     x_train, y_train, x_test, y_test = get_data()
     print ("Training of MLP...")
     train_net(net, x_train, y_train, x_test, y_test)
 
-    # Training of convolutional NN + fully connected perceptron
+    # Training of CNN + MLP
     net = ConvNet(0.9)
     x_train_ = []
     for digit in x_train:
