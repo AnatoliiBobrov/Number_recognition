@@ -147,7 +147,7 @@ def get_data():
 
 def train_both():
     """
-    Training of two tipes of NN
+    Training of two types of NN
     """    
     # Training of fully connected perceptron
     net = Net()
