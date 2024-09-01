@@ -2,7 +2,8 @@
 Для это мы описали для модели нейронной сети: MLP (Net) и CNN + MLP (ConvNet).
 Набор цифр в файле "data.bin" имеет вид: (x_train, y_train), (x_test, y_test)
 
-[CLICK HERE TO GO TO GOOGLE](https://www.educba.com/pytorch-conv2d/)
+Реализация структуры второй модели взаимствована [отсюда](https://www.educba.com/pytorch-conv2d/).
+
 
 
 ```
