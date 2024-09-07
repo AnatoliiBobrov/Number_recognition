@@ -12,7 +12,7 @@ The English translation is below.
 Результат выполнения представлен ниже (время в секундах)
 
 English
-In this repository, we will compare the recognition accuracy of the MNIST test set of digits. To do this, we have described for the neural network model: MLP (Net) and CNN + MLP (Convention). The set of digits in the "data.bin" file has the form: (x_train, y_train), (x_test, y_test). Neural networks are trained using the Pwtorch module
+In this repository, we will compare the recognition accuracy of the MNIST test set of digits. To do this, we have described for the neural network model: MLP (Net) and CNN + MLP (Convention). The set of digits in the "data.bin" file has the form: (x_train, y_train), (x_test, y_test). Neural networks are trained using the PyTorch module
 
 The implementation of the structure of the second model is borrowed from [here](https://www.educba.com/pytorch-conv2d/). A convolutional neural network provides 1% greater accuracy than a simple multilayer perceptron, yielding 6 times in training time.
 
